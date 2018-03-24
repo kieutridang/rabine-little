@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { makeGetSites } from '../../appSelector/site';
+import { makeGetSites } from './site.selectors';
 import FilterableTable from '../../components/FilterTable';
-import { actions } from '../../appReducer/site.reducer';
+import { actions } from './site.reducer';
 
 const renderFunctions = () => (<span>⋮</span>);
 

@@ -1,7 +1,7 @@
 import { call, put, takeLatest, select } from 'redux-saga/effects';
-import request from '../../appApi/fetcher/request';
-import { rabineFetcher } from '../../appApi/fetcher/rabineFetcher';
-import { API_URL, API_DRONEPARTNER_PATH } from '../../constants';
+import request from 'utils/api/request';
+import { rabineFetcher } from 'utils/api/rabineFetcher';
+import { API_URL, API_DRONEPARTNER_PATH } from 'utils/constants';
 import * as constants from './constants';
 import * as actions from './actions';
 import { selectItemPerPage, selectDronePartnerData, selectCurrentPage, selectSearchText } from './selectors';

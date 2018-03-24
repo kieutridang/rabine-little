@@ -4,8 +4,6 @@ import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { actions } from '../../appReducer/site.reducer';
-
 // app
 import ContentWrapper from '../../components/Content/ContentWrapper';
 import ContentHeader from '../../components/Content/ContentHeader';
@@ -13,13 +11,13 @@ import ContentFilter from '../../components/Content/ContentFilter';
 import ContentData from '../../components/Content/ContentData';
 import FilterTitle from '../../components/Title/FilterTitle';
 import HeaderTitle from '../../components/Title/HeaderTitle';
-import Box from '../../components/Box';
-import Button from '../../components/Button';
-import SlidingPane from '../../components/SlidePane';
+import Box from '../../components/Box/index';
+import Button from '../../components/Button/index';
+import SlidingPane from '../../components/SlidePane/index';
 
 import SiteAdd from './siteAdd.container';
 import SiteList from './siteList.container';
-
+import { actions } from './site.reducer';
 
 class SitePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 

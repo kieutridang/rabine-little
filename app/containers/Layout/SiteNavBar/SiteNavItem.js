@@ -22,6 +22,7 @@ const SiteNavItem = ({ selected = false, label = '', path, onClick = undefined }
         alignItems="center"
         padding={{
           top: '16px',
+          bottom: '18px',
         }}
       >
         { label }

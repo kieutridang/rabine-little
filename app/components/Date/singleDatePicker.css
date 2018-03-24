@@ -6,12 +6,6 @@
     border: solid 1px #dedee1;
     border-radius: 3px;
     margin: 0 15px;
-    text-align: left;
-}
-
-.SingleDatePickerInput__withBorder button {
-    margin: 0;
-    margin-left: 5px;
 }
 
 .SingleDatePickerInput__withBorder:last-child {
@@ -42,22 +36,15 @@
 }
 
 .slide-pane__content .SingleDatePickerInput .DateInput .DateInput_input {
+    font-size: 14px;
+    line-height: 1.29;
     letter-spacing: 0.5px;
     text-align: left;
-    border: none;
-    padding: 11px 2px 11px;
-    background-color: #fbfbfb;
-
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.29;
-    color: #707277;
-}
-
-.slide-pane__content .SingleDatePickerInput .DateInput .DateInput_input::placeholder {
     color: #cbccce;
+    font-weight: 400;
+    border: none;
+    padding: 9px 12px 11px;
+    background-color: #fbfbfb;
 }
 
 .SingleDatePickerInput_calendarIcon {

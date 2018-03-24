@@ -8,8 +8,8 @@ import React from 'react';
 import identity from 'lodash/identity';
 
 import configureStore from '../../configureStore';
-import injectReducer from '../../common/injectReducer';
-import * as reducerInjectors from '../../common/reducerInjectors';
+import injectReducer from '../injectReducer';
+import * as reducerInjectors from '../reducerInjectors';
 
 // Fixtures
 const Component = () => null;
@@ -34,7 +34,7 @@ describe('injectReducer decorator', () => {
     reducerInjectors.default.mockClear();
   });
 
-  it('should inject a given appReducer', () => {
+  it('should inject a given reducer', () => {
     shallow(<ComponentWithReducer />, { context: { store } });
 
     expect(injectors.injectReducer).toHaveBeenCalledTimes(1);

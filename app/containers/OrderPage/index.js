@@ -7,7 +7,7 @@ import ContentHeader from '../../components/Content/ContentHeader';
 import ContentFilter from '../../components/Content/ContentFilter';
 import ContentData from '../../components/Content/ContentData';
 import HeaderTitle from '../../components/Title/HeaderTitle';
-import Box from '../../components/Box';
+import Box from '../../components/Box/index';
 import FilterTitle from '../../components/Title/FilterTitle';
 
 class OrderPage extends React.Component { // eslint-disable-line react/prefer-stateless-function

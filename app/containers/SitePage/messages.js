@@ -39,10 +39,6 @@ export default defineMessages({
     id: 'boilerplate.containers.AddSitePage.deadline.label',
     defaultMessage: 'Deadline',
   },
-  deadlinePlaceHolder: {
-    id: 'boilerplate.containers.AddSitePage.deadline.placeholder',
-    defaultMessage: 'Please Enter Date',
-  },
   typeLabel: {
     id: 'boilerplate.containers.AddSitePage.type.label',
     defaultMessage: 'Site Type',

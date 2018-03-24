@@ -8,16 +8,15 @@ import ContentWrapper from '../../components/Content/ContentWrapper';
 import ContentHeader from '../../components/Content/ContentHeader';
 import ContentFilter from '../../components/Content/ContentFilter';
 import ContentData from '../../components/Content/ContentData';
-import Button from '../../components/Button/';
-import SlidingPane from '../../components/SlidePane';
+import Button from '../../components/Button/index';
+import SlidingPane from '../../components/SlidePane/index';
 import HeaderTitle from '../../components/Title/HeaderTitle';
 import FilterTitle from '../../components/Title/FilterTitle';
 import ContentForm from '../../components/Content/ContentForm';
-import Input from '../../components/Input';
+import Input from '../../components/Input/index';
 import SearchIcon from '../../images/search.png';
 import RabineDateRangePicker from '../../components/Date/DateRangePicker';
 import RabineSingleDatePicker from '../../components/Date/SingleDatePicker';
-import HorizontalLinearStepper from '../../components/Stepper/HorizontalLinearStepper';
 
 class DashboardPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -91,8 +90,6 @@ class DashboardPage extends React.Component { // eslint-disable-line react/prefe
           <div><Link to="/sites/1" >Go To Site Detail screen</Link></div>
 
           <div><Link to="/sites/1/map">Go To Site Maps screen</Link></div>
-
-          <HorizontalLinearStepper />
         </ContentData>
 
         <SlidingPane

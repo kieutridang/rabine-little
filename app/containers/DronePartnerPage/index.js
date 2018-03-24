@@ -6,8 +6,8 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 // app
-import injectSaga from '../../common/injectSaga';
-import injectReducer from '../../common/injectReducer';
+import injectSaga from 'utils/injectSaga';
+import injectReducer from 'utils/injectReducer';
 import { selectDronePartnerList, selectIsLoading } from './selectors';
 import { fetchDronePartners, searchItem } from './actions';
 import saga from './saga';

@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // app
-import NavBarContainer from './NavBarContainer';
+import NavBarContainer from '../NavBarContainer/index';
 import LayoutContainer from './LayoutContainer';
 
 const DashboardLayout = (props) => {

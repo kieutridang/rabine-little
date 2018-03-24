@@ -35,9 +35,6 @@ const SiteNavTitle = ({ title, onGoBack }) => (
   <Box
     fill
     direction="row"
-    padding={{
-      top: '16px',
-    }}
   >
     <StyledGoBack
       onClick={onGoBack}

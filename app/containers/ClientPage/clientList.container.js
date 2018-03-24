@@ -5,9 +5,9 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { makeGetClients } from '../../appSelector/client';
+import { makeGetClients } from './client.selectors';
 import FilterableTable from '../../components/FilterTable';
-import { actions } from '../../appReducer/client.reducer';
+import { actions } from './client.reducer';
 
 const renderFunctions = () => (<span>⋮</span>);
 

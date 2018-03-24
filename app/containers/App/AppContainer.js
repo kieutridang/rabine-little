@@ -6,7 +6,7 @@ import './bootstrap.min.css';
 import './app.css';
 
 // app
-import Box from '../../components/Box';
+import Box from '../../components/Box/index';
 import { dashboardRoutes, siteSubRoutes } from './routes';
 
 

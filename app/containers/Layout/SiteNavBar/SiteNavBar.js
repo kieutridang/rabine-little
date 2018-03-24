@@ -29,6 +29,14 @@ export const siteLinks = [
 ];
 
 class SiteNavBar extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      selectedPath: 'design',
+    };
+  }
+
   onNavItemChangedHandler = (selectedPath) => () => this.setState({ selectedPath });
 
   onGoBack = () => this.props.onGoBack();
@@ -64,6 +72,7 @@ class SiteNavBar extends React.Component {
                   label={link.label}
                   selected={selected}
                   path={renderedPath}
+                  onClick={this.onNavItemChangedHandler(renderedPath)}
                 />
               );
             })

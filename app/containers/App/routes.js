@@ -4,13 +4,14 @@ import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // app
-import DashboardPage from '../DashboardPage';
-import ClientPage from '../ClientPage';
-import SitePage from '../SitePage';
-import OrderPage from '../OrderPage';
-import DronePartnerPage from '../DronePartnerPage';
+import DashboardPage from '../DashboardPage/index';
+import ClientPage from '../ClientPage/index';
+import SitePage from '../SitePage/index';
+import OrderPage from '../OrderPage/index';
+import DronePartnerPage from '../DronePartnerPage/index';
 import DashboardLayout from '../Layout/DashboardLayout';
-import SiteDesignPage from '../SiteDetailPage/SiteDesignPage';
+import SiteDetailContainer from '../SiteDetail/Loadable';
+// import SiteDesignPage from '../SiteDetailPage/SiteDesignPage';
 import SiteDetailLayout from '../Layout/SiteDetailLayout';
 import SiteMapPage from '../SiteMapPage';
 import SitePhotosPage from '../SiteDetailPage/SitePhotosPage';
@@ -67,7 +68,7 @@ export const siteSubRoutes = [
     key: 'siteDesign',
     exact: true,
     path: '/sites/:siteId/design',
-    render: (route) => <SiteDetail component={SiteDesignPage} route={route} root="/sites" />,
+    render: (route) => <SiteDetail component={SiteDetailContainer} route={route} root="/sites" />,
   },
   {
     key: 'siteMap',

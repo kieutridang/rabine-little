@@ -17,9 +17,6 @@ const StyledButton = styled.button`
   &:hover {
     box-shadow: 2px 2px 0px #ccc;
   }
-  &:focus {
-    outline: none;
-  }
   
   width: ${(props) => props.width ? props.width : '165px'};
   ${(props) => props.color && colorStyle(props.color)}

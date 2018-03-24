@@ -8,13 +8,13 @@ import { withFormik } from 'formik';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { makeSelectError, makeSelectClient, makeIsClientOpen } from '../../appSelector/client';
+import { makeSelectError, makeSelectClient, makeIsClientOpen } from './client.selectors';
 import messages from './messages';
 import LoadingIndicator from '../../components/LoadingIndicator';
 import SlidingPane from '../../components/SlidePane';
 import { Form, Input, InputWrap, ErrorMessage, AddButton } from './StyledComponents';
 
-import { actions } from '../../appReducer/client.reducer';
+import { actions } from './client.reducer';
 
 class ClientAddContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
   constructor(props, context) {

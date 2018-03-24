@@ -15,7 +15,7 @@ import HeaderTitle from '../../components/Title/HeaderTitle';
 import FilterTitle from '../../components/Title/FilterTitle';
 import ClientAdd from './clientAdd.container';
 import ClientList from './clientList.container';
-import { actions } from '../../appReducer/client.reducer';
+import { actions } from './client.reducer';
 
 class ClientPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 

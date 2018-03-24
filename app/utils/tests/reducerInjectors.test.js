@@ -10,7 +10,7 @@ import configureStore from '../../configureStore';
 
 import getInjectors, {
   injectReducerFactory,
-} from '../../common/reducerInjectors';
+} from '../reducerInjectors';
 
 // Fixtures
 
@@ -25,7 +25,7 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-describe('appReducer injectors', () => {
+describe('reducer injectors', () => {
   let store;
   let injectReducer;
 
@@ -65,13 +65,13 @@ describe('appReducer injectors', () => {
       expect(() => injectReducer('test', reducer)).not.toThrow();
     });
 
-    it('should validate a appReducer and appReducer\'s key', () => {
+    it('should validate a reducer and reducer\'s key', () => {
       expect(() => injectReducer('', reducer)).toThrow();
       expect(() => injectReducer(1, reducer)).toThrow();
       expect(() => injectReducer(1, 1)).toThrow();
     });
 
-    it('given a store, it should provide a function to inject a appReducer', () => {
+    it('given a store, it should provide a function to inject a reducer', () => {
       injectReducer('test', reducer);
 
       const actual = store.getState().get('test');
@@ -80,7 +80,7 @@ describe('appReducer injectors', () => {
       expect(actual.toJS()).toEqual(expected.toJS());
     });
 
-    it('should not assign appReducer if already existing', () => {
+    it('should not assign reducer if already existing', () => {
       store.replaceReducer = jest.fn();
       injectReducer('test', reducer);
       injectReducer('test', reducer);
@@ -88,7 +88,7 @@ describe('appReducer injectors', () => {
       expect(store.replaceReducer).toHaveBeenCalledTimes(1);
     });
 
-    it('should assign appReducer if different implementation for hot reloading', () => {
+    it('should assign reducer if different implementation for hot reloading', () => {
       store.replaceReducer = jest.fn();
       injectReducer('test', reducer);
       injectReducer('test', identity);

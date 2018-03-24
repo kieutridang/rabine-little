@@ -8,8 +8,8 @@ import { shallow } from 'enzyme';
 import React from 'react';
 
 import configureStore from '../../configureStore';
-import injectSaga from '../../common/injectSaga';
-import * as sagaInjectors from '../../common/sagaInjectors';
+import injectSaga from '../injectSaga';
+import * as sagaInjectors from '../sagaInjectors';
 
 // Fixtures
 const Component = () => null;

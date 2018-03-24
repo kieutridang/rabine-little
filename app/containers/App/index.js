@@ -17,7 +17,7 @@ import LoginPage from 'containers/LoginPage/Loadable';
 import SignupPage from 'containers/SignupPage/Loadable';
 // import NotFoundPage from 'containers/NotFoundPage/Loadable';
 // import DashboardPage from 'containers/DashboardPage/Loadable';
-import auth from '../../appApi/auth';
+import auth from 'utils/api/auth';
 // import Header from 'components/Header';
 // import Footer from 'components/Footer';
 import AppContainer from './Loadable';

@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { browserHistory } from 'react-router-dom';
 import { shallow, mount } from 'enzyme';
 
-import LocaleToggle, { mapDispatchToProps } from '../';
+import LocaleToggle, { mapDispatchToProps } from '../index';
 import { changeLocale } from '../../LanguageProvider/actions';
 import LanguageProvider from '../../LanguageProvider';
 
