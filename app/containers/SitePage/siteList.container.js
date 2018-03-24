@@ -7,16 +7,18 @@ import { createStructuredSelector } from 'reselect';
 import { makeGetSites } from '../../appSelector/site';
 import FilterableTable from '../../components/FilterTable';
 import { actions } from '../../appReducer/site.reducer';
+import { Link }  from 'react-router-dom';
 
 const renderFunctions = () => (<span>⋮</span>);
+const render = (props) => (<Link to = {`/sites/${props.record.id}`}> {props.record.name} </Link>);
 
 const fields = [
-  { name: 'name', displayName: 'Site Name', sortable: true },
+  { name: 'name', displayName: 'Site Name', sortable: true, render: render },
   { name: 'deadline', displayName: 'Completed', sortable: true },
   { name: 'cost', displayName: 'Cost', sortable: true },
   { name: 'sqFoot', displayName: 'Total SQ.FT.', sortable: true },
   { name: 'droneCost', displayName: 'Total Repairs', sortable: true },
-  { name: '', displayName: ' ', inputFilterable: false, sortable: false, render: renderFunctions },
+  { name: '', displayName: ' ', inputFilterable: false, sortable: false, render: renderFunctions }
 ];
 
 class SiteListContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
