@@ -4,14 +4,16 @@ import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import { Link } from 'react-router-dom';
 import { makeGetSites } from '../../appSelector/site';
 import FilterableTable from '../../components/FilterTable';
 import { actions } from '../../appReducer/site.reducer';
 
 const renderFunctions = () => (<span>⋮</span>);
+const renderName = (props) => <Link to={''.concat('/sites/', props.record.id.toString(), '/design')}> {props.record.name} </Link>;
 
 const fields = [
-  { name: 'name', displayName: 'Site Name', sortable: true },
+  { name: 'name', displayName: 'Site Name', sortable: true, render: renderName },
   { name: 'deadline', displayName: 'Completed', sortable: true },
   { name: 'cost', displayName: 'Cost', sortable: true },
   { name: 'sqFoot', displayName: 'Total SQ.FT.', sortable: true },
@@ -27,7 +29,6 @@ class SiteListContainer extends React.Component { // eslint-disable-line react/p
   render() {
     const { sites = [] } = this.props;
     const data = sites;
-
     return (
       <FilterableTable
         namespace="site"
@@ -46,6 +47,10 @@ class SiteListContainer extends React.Component { // eslint-disable-line react/p
 SiteListContainer.propTypes = {
   getSitesRequest: PropTypes.func,
   sites: PropTypes.arrayOf(PropTypes.object),
+};
+
+renderName.propTypes = {
+  record: PropTypes.object,
 };
 
 const mapStateToProps = createStructuredSelector({

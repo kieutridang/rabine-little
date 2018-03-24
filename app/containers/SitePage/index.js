@@ -77,7 +77,6 @@ class SitePage extends React.Component { // eslint-disable-line react/prefer-sta
         <ContentData>
           <SiteList />
         </ContentData>
-
         <SiteAdd />
 
 
