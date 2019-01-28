@@ -1,0 +1,215 @@
+label {
+    display: inline;
+}
+
+.Demo__suggestion-icon {
+    margin-right: 8px;
+}
+
+.fa.fa-map-marker.header {
+    color: #e53935;
+}
+
+.Demo__search-input,
+.Demo__search-input:focus,
+.Demo__search-input:active {
+    outline: none;
+    border: 1px solid #ACAEB0;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #707277;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Demo__autocomplete-container {
+    border-bottom: honeydew;
+    border-left: honeydew;
+    border-right: honeydew;
+    border-top: 1px solid #e6e6e6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 0 0 2px 2px;
+}
+
+.Demo__suggestion-item {
+    padding: 4px;
+    text-align: left;
+}
+
+.Demo__dropdown-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+}
+
+.Demo__dropdown-footer-image {
+    display: inline-block;
+    width: 150px;
+}
+
+.Demo__spinner {
+    color: #18bc9c;
+    font-size: 30px;
+}
+
+@media (max-width: 480px) {
+    .autocomplete-container {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .alert {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        -webkit-animation: fadein .75s;
+        -moz-animation: fadein .75s;
+        -ms-animation: fadein .75s;
+        -o-animation: fadein .75s;
+        animation: fadein .75s;
+    }
+
+    .btn {
+        margin-top: 1.5rem;
+    }
+
+    .form-group {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+    }
+}
+
+.geocoding-results {
+    text-align: left;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.Site__Checkbox {
+  width: auto !important;
+  height: auto !important;
+}
+
+.Site__Snackbar {
+  min-width: 45rem !important;
+  min-height: 3.75rem !important;
+  background-color: hsla(0, 0%, 100%, 1.0) !important;
+  border-radius: 3px;
+  box-shadow: 0 -2px 4px 0 hsla(0, 0%, 0%, 0.2) !important;
+  border: solid 1px hsla(200, 9%, 87%, 1.0) !important;
+}
+
+.Site__Snackbar-Button {
+  color: hsla(210, 1%, 71%, 1.0) !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+
+.react-autosuggest__container {
+    position: relative;
+}
+
+.react-autosuggest__input {
+height: 40px;
+  color: #ACAEB0;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #fbfbfb;
+  border: solid 1px #cbccce;
+  
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #707277;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.react-autosuggest__input::placeholder {
+    opacity: 0.7;
+}
+
+.react-autosuggest__input--focused {
+    outline: none;
+}
+
+.react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+    display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+}
+  

@@ -1,0 +1,225 @@
+.filterable-table-container .header-row {
+    margin-top: 6px;
+}
+
+.filterable-table-container th {
+    border: 0px none;
+}
+
+.filterable-table-container th:first-of-type,
+.filterable-table-container td:first-of-type {
+    padding-left: 20px;
+}
+
+.filterable-table-container tr {
+    border: 0px none;
+}
+
+.filterable-table-container span {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #323232;
+}
+
+.filterable-table-container .header-row .exact-filters {
+    margin-top: 20px;
+}
+
+.filterable-table-container .header-row .record-count {
+    padding-top: 7px;
+}
+
+.filterable-table-container table.filterable-table tfoot tr td {
+    font-weight: 700;
+}
+
+.filterable-table-container span.filterable {
+    border-bottom: 0px solid #91c1ff;
+}
+
+.filterable-table {
+    font-family: 'Source Sans Pro';
+    background-color: white;
+    margin-top: 24px;
+}
+
+.table-container>div:first-child {
+    min-height: 455px;
+}
+
+.filterable-table tr td {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #323232;
+    border-top-width: 0.5px;
+}
+
+.filterable-table-container .filter-container {
+    position: relative;
+}
+
+.filterable-table-container .filter-container .filter-input,
+.filterable-table-container .filter-container .page-size {
+    width: 185px;
+    display: inline;
+}
+
+.filterable-table-container .clear-filter {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+
+.filterable-table-container span.sortable,
+.filterable-table-container span.filterable {
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.filterable-table-container table.filterable-table thead {
+    border-width: 0;
+}
+
+.filterable-table-container table.filterable-table thead tr {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.filterable-table-container table.filterable-table thead tr th span.fa {
+    padding-left: 15px;
+    color: #aaa;
+}
+
+.filterable-table-container table.filterable-table thead tr th {
+    white-space: nowrap;
+    user-select: none;
+    opacity: 0.4;
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #323232;
+    text-transform: uppercase;
+    border-bottom-width: 0px;
+}
+
+.filterable-table-container ul.pagination {
+    border-color: #d4d4d9;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    display: inline-flex;
+}
+
+.filterable-table-container ul.pagination li {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #d4d4d9;
+    border-style: solid;
+    text-align: center;
+    border-width: 1px 1px 0 0;
+}
+
+.filterable-table-container ul.pagination li.btn-first-page {
+    display: none;
+}
+
+.filterable-table-container ul.pagination li.btn-last-page {
+    display: none;
+}
+
+.filterable-table-container ul.pagination li.disabled {
+    display: none;
+}
+
+.filterable-table-container ul.pagination li a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #818d98;
+    background-color: hsla(0, 0%, 100%, 1.0);
+}
+
+.filterable-table-container ul.pagination li.active a {
+    background-color: #ed2324;
+    color: white;
+}
+
+.filterable-table-container ul.pagination li.active {
+    background-color: #ed2324;
+    border-collapse: collapse;
+}
+
+.filterable-table-container ul.pagination li:not(.disabled) a {
+    cursor: pointer;
+}
+
+.filterable-table-container span.empty {
+    font-style: italic;
+    color: #999;
+}
+
+.filterable-table-container .filter-item {
+    border: 0px solid #ccc;
+    border-radius: 1px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.filterable-table-container .filter-item .filter-item-title {
+    background-color: #2f6e9b;
+    border-radius: 1px;
+    color: #fff;
+}
+
+.filterable-table-container .filter-item .filter-item-title .filter-item-remove {
+    color: #fff;
+    font-weight: 700;
+    user-select: none;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.filterable-table-container .filter-item .filter-item-title,
+.filterable-table-container .filter-item .filter-item-value {
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.fa.fa-sort:after,
+.fa.fa-sort-asc:after,
+.fa.fa-sort-desc:after {
+    content: '';
+}
+
+.fa.fa-sort,
+.fa.fa-sort-asc,
+.fa.fa-sort-desc {
+    cursor: pointer;
+}

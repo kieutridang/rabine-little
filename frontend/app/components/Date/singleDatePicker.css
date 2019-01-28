@@ -1,0 +1,65 @@
+.SingleDatePickerInput .DateInput {
+    width: 220px !important;
+}
+
+.SingleDatePickerInput__withBorder {
+    border: solid 1px #dedee1;
+    border-radius: 3px;
+    margin: 0 15px;
+    text-align: left;
+}
+
+.SingleDatePickerInput__withBorder button {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.SingleDatePickerInput__withBorder:last-child {
+    margin: 0 0 0 15px;
+}
+
+.SingleDatePickerInput .DateInput {
+    width: 100px;
+}
+
+.SingleDatePickerInput .DateInput .DateInput_input {
+    font-size: 14px;
+    line-height: 18px;
+    color: #b3bac0;
+    font-weight: 400;
+    border: none;
+    padding: 10px 12px 11px;
+}
+
+.slide-pane__content .SingleDatePicker,
+.slide-pane__content .SingleDatePickerInput {
+    background-color: #fbfbfb;
+}
+
+.slide-pane__content .SingleDatePickerInput__withBorder {
+    margin: 0;
+    border: solid 1px #cbccce;
+}
+
+.slide-pane__content .SingleDatePickerInput .DateInput .DateInput_input {
+    letter-spacing: 0.5px;
+    text-align: left;
+    border: none;
+    padding: 11px 2px 11px;
+    background-color: #fbfbfb;
+
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    color: #707277;
+}
+
+.slide-pane__content .SingleDatePickerInput .DateInput .DateInput_input::placeholder {
+    color: #cbccce;
+}
+
+.SingleDatePickerInput_calendarIcon {
+    padding: 5px 10px 10px 10px;
+}

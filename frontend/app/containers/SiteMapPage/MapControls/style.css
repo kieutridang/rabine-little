@@ -1,0 +1,49 @@
+.item-drag-button {
+  position: absolute;
+  top: 1.0rem;
+  left: 1.0rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  z-index: 3;
+  margin-top: -1px;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.item-drag-button span {
+  display: block;
+  height: 100%;
+}
+
+.item-drag-button:hover:after,
+.item-drag-button:hover span:before,
+.item-drag-button:hover span:after {
+  background: hsla(0, 0%, 100%, 0.7);
+}
+
+.item-drag-button:after,
+.item-drag-button span:before,
+.item-drag-button span:after {
+  width: 100%;
+  background: hsla(0, 0%, 100%, 0.4);
+}
+
+.item-drag-button:after,
+.item-drag-button span:before,
+.item-drag-button span:after {
+  height: 1px;
+  position: absolute;
+  content: '';
+}
+
+.item-drag-button:after {
+  margin-top: -0.4rem;
+}
+
+.item-drag-button span:before {
+  margin-top: -0.1rem;
+}
+
+.item-drag-button span:after {
+  margin-top: 0.1rem;
+}

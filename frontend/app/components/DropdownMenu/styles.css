@@ -1,0 +1,8 @@
+.DropdownMenu__IconButton {
+  height: auto !important;
+  width: auto !important;
+}
+
+.DropdownMenu__IconButton-Icon {
+  color: #aaa !important;  
+}

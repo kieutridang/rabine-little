@@ -1,0 +1,12 @@
+.empty {
+    width: 200px;
+}
+.th-deadline {
+    opacity: 1 !important;
+}
+.th-deadline span {
+    color: black;
+}
+.filterable-table-container span.sortable {
+    font-weight: bold;
+}

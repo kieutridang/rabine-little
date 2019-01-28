@@ -1,0 +1,2 @@
+export InventoryItems from './InventoryItems';
+

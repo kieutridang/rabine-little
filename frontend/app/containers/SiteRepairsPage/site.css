@@ -1,0 +1,142 @@
+label {
+    display: inline;
+}
+
+.Demo__suggestion-icon {
+    margin-right: 8px;
+}
+
+.fa.fa-map-marker.header {
+    color: #e53935;
+}
+
+.Demo__search-input,
+.Demo__search-input:focus,
+.Demo__search-input:active {
+    outline: none;
+    border: 1px solid #ACAEB0;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #707277;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Demo__autocomplete-container {
+    border-bottom: honeydew;
+    border-left: honeydew;
+    border-right: honeydew;
+    border-top: 1px solid #e6e6e6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 0 0 2px 2px;
+}
+
+.Demo__suggestion-item {
+    padding: 4px;
+    text-align: left;
+}
+
+.Demo__dropdown-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+}
+
+.Demo__dropdown-footer-image {
+    display: inline-block;
+    width: 150px;
+}
+
+.Demo__spinner {
+    color: #18bc9c;
+    font-size: 30px;
+}
+
+/* feature tab lists */
+.tab-feature-types > .react-tabs > ul.react-tabs__tab-list {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+    background-color: #494C4E;
+}
+
+.tab-feature-types > .react-tabs > ul.react-tabs__tab-list > li.react-tabs__tab {
+    color: #949697;
+}
+
+.tab-feature-types > .react-tabs > ul.react-tabs__tab-list > li.react-tabs__tab--selected{
+    color: #ffffff;
+}
+
+.hidden-tab {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .autocomplete-container {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .alert {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        -webkit-animation: fadein .75s;
+        -moz-animation: fadein .75s;
+        -ms-animation: fadein .75s;
+        -o-animation: fadein .75s;
+        animation: fadein .75s;
+    }
+
+    .btn {
+        margin-top: 1.5rem;
+    }
+
+    .form-group {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+    }
+}
+
+.geocoding-results {
+    text-align: left;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+

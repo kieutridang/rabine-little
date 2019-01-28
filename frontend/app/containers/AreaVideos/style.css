@@ -1,0 +1,79 @@
+.map-photo-marker-modal {
+  border: 0 !important;
+  background: none !important;
+  height: 100%;
+}
+
+.map-photo-marker-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(3, 3%, 3%, 0.8) !important;
+  z-index: 1000;
+  -webkit-backdrop-filter: saturate(120%) blur(3px);
+  transition: all 180ms ease;
+}
+
+.map-photo-marker-modal .photosContainer {
+  height: 100%;
+}
+
+.map-photo-marker-modal .photosContainer,
+.map-photo-marker-modal .photoMetadata {
+  background: none;
+}
+
+.map-photo-marker-modal #PhotoView {
+  background: hsla(0, 0%, 0%, 0.42);
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 90%;
+}
+
+.videoContainer video {
+  border: 1px white solid;
+  background-color: black;
+  width: 100% !important;
+  max-width: 1024px;
+  height: auto !important;
+}
+.videoContainer .titleContainer {
+  width: 100%;
+  height: auto;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.videoContainer p {
+  margin-left: 0px;
+  align-self: flex-start;
+  color: white;
+  font-size: 20px;
+  font-family: "Source Sans Pro";
+}
+
+.close-button {
+  color: white;
+  position: fixed;
+  top: 0.2rem;
+  right: 4.0rem;
+  z-index: 1001;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  opacity: 0.8;
+}

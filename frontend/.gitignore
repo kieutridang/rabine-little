@@ -1,0 +1,16 @@
+
+node_modules/
+.vscode
+\.DS_Store
+
+# Ignore build folder
+build
+node_modules
+build/
+coverage
+.prettierc
+.idea/
+yarn-error.log
+package-lock.json
+yarn.lock
+.vs

@@ -1,0 +1,160 @@
+.photoPaginate {
+  border: 1px solid #d4d4d9;
+  border-radius: 3px;
+  overflow: hidden;
+  min-height: 30px;
+  margin: 0;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.photoPaginate ul {
+  list-style: none;
+  display: inline-flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+.photoPaginate ul li {
+  line-height: 1;
+  text-decoration: none;
+  flex: 0 0 auto;
+  user-select: none;
+  background: 0 0;
+  transition: background 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
+  text-align: center;
+  cursor: pointer;
+  border-left: 1px solid #d4d4d9;
+  padding: 0;
+}
+.photoPaginate ul > li:first-child {
+  border-radius: 3px 0 0 3px;
+  border-left: none;
+}
+.photoPaginate ul > li:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.photoPaginate ul li a {
+  color: #818d98;
+  display: block;
+  padding: 5px 10px;
+  outline: 0 !important;
+}
+.photoPaginate ul li a .fa {
+  font-size: 12px;
+}
+.photoPaginate ul li a:hover {
+  text-decoration: none;
+}
+.photoPaginate ul li.selected {
+  border-top: none;
+  background-color: #ed2324;
+  font-weight: bold;
+  box-shadow: none;
+}
+.photoPaginate ul li.selected a {
+  color: #fff;
+}
+
+.areaButton {
+  color: white;
+  padding: 14px 28px;
+  display: block;
+  border-top: solid 1px #575757;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.areaButton::after {
+  width: 3px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  content: "";
+  display: block;
+  visibility: hidden;
+  background-color: #ed1c24;
+}
+.areaButton:focus {
+  outline: 0;
+}
+.areaButton.selected,
+.areaButton:hover {
+  text-decoration: none;
+  background: #303030;
+}
+.areaButton.selected::after {
+  visibility: visible;
+}
+.areaButton:last-child {
+  border-bottom: solid 1px #575757;
+}
+
+.syncPhotos {
+  color: #ffffff;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #ed2324;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.syncPhotos:disabled {
+  opacity: 0.7;
+}
+
+.media-item-title {
+  text-align: center;
+  position: relative;
+}
+
+.delete-media {
+  position: absolute;
+  right: 8px;
+  top: -2px;
+}
+
+.btn-deleted {
+  cursor: pointer;
+}
+
+.delete-media img {
+  width: 13px;
+  height: 13px;
+}
+
+.undelete-media{
+  margin-top: 0px !important;
+}
+
+.deleted .thumbnail {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.deleted-area-container {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 7px;
+}
+
+.delete-area {
+  cursor: pointer;
+}
+
+.deleting {
+  color: #ed2324;
+}
+
+.title-media {
+  width: 170px;
+  word-wrap: break-word;
+  padding-left: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

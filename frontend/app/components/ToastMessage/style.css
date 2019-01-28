@@ -1,0 +1,26 @@
+
+.toast-title {
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6b6b6b;
+}
+
+.toast-content {
+    font-family: 'Source Sans Pro';
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6b6b6b;
+    margin-bottom: 14px;
+    opacity: 0.7;
+}

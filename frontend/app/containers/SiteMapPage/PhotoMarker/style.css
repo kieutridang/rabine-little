@@ -1,0 +1,50 @@
+.map-photo-marker-modal {
+  border: 0 !important;
+  background: none !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.map-photo-marker-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(3, 3%, 3%, 0.8) !important;
+  z-index: 1000;
+  -webkit-backdrop-filter: saturate(120%) blur(3px);
+  transition: all 180ms ease;
+}
+
+.map-photo-marker-modal .photosContainer {
+  height: 100%;
+}
+
+.map-photo-marker-modal .photosContainer,
+.map-photo-marker-modal .photoMetadata {
+  background: none;
+}
+
+.map-photo-marker-modal #PhotoView {
+  background: hsla(0, 0%, 0%, 0.22);
+}
+
+.close-button {
+  color: white;
+  position: fixed;
+  top: 0.6rem;
+  right: 1rem;
+  z-index: 1001;
+  font-size: 2.0rem;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+
+.close-button:hover {
+  opacity: 0.7;
+}

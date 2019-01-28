@@ -1,0 +1,71 @@
+label {
+  display: inline;
+}
+
+.ReactModal__Overlay {
+  z-index: 1000;
+}
+
+/* --------------------------------- SIDE BAR STYLES --------------------------------- */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu-wrap {
+  top: 0;
+}
+
+.bm-menu {
+  background: hsla(0, 0%, 8%, 0.98);
+  font-size: 1.15rem;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* --------------------------------- END OF SIDE BAR STYLES --------------------------------- */
+
+.arrow-side-bar-transform-right {
+  animation: spin 0.6s ease-in-out forwards;
+}
+
+.arrow-side-bar-transform-left {
+  animation: spin-left 0.6s ease-in-out forwards;
+}
+
+@keyframes spin {
+  100% { transform: rotate(180deg) }
+}
+
+@keyframes spin-left {
+  100% { transform: rotate(360deg) }
+}
