@@ -1,9 +1,0 @@
-
-node_modules/
-.vscode
-\.DS_Store
-
-# Ignore build folder
-build
-node_modules
-build/
